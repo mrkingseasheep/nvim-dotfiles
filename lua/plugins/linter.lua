@@ -1,6 +1,7 @@
 return {
 	{
 		"mfussenegger/nvim-lint",
+		enabled = false,
 		event = { "BufReadPre", "BufNewFile" },
 		config = function()
 			-- vim.cmd(
@@ -25,9 +26,9 @@ return {
 			-- )
 
 			require("lint").linters_by_ft = {
-				markdown = { "vale" },
-				lua = { "luacheck" },
-				cpp = { "clang-tidy" },
+				-- markdown = { "vale" },
+				-- lua = { "luacheck" },
+				-- cpp = { "clang-tidy" },
 			}
 
 			vim.api.nvim_create_autocmd({ "BufWritePost" }, {

@@ -25,7 +25,7 @@ imap("jk", "<ESC><CMD>w<CR>")
 imap("jjk", "<ESC>")
 
 --- copy all
-nmap("<LEADER>a", "<ESC>%y+<CR>")
+nmap("<LEADER>a", 'ggvG"+y')
 
 --- undo with U
 nmap("U", "<C-r>")
@@ -64,3 +64,11 @@ nmap("<LEADER>ff", "<CMD>Telescope find_files<CR>")
 nmap("<LEADER>fl", "<CMD>Telescope live_grep<CR>")
 nmap("<LEADER>fs", "<CMD>Telescope grep_string<CR>")
 nmap("<LEADER>fg", "<CMD>Telescope git_files<CR>")
+nmap("<LEADER>fo", "<CMD>ObsidianSearch<CR>")
+
+--- obsidian
+nmap("<LEADER>n", "<CMD>e ~/Documents/archives/1715179261-navigation.md<CR>")
+nmap("<LEADER>on", "<CMD>ObsidianToday<CR>")
+nmap("<LEADER>ot", "<CMD>ObsidianToday 1<CR>")
+nmap("<LEADER>oy", "<CMD>ObsidianToday -1<CR>")
+nmap("<LEADER>ob", "<CMD>ObsidianBacklinks<CR>")
