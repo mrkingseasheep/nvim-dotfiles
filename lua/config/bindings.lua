@@ -72,3 +72,7 @@ nmap("<LEADER>on", "<CMD>ObsidianToday<CR>")
 nmap("<LEADER>ot", "<CMD>ObsidianToday 1<CR>")
 nmap("<LEADER>oy", "<CMD>ObsidianToday -1<CR>")
 nmap("<LEADER>ob", "<CMD>ObsidianBacklinks<CR>")
+
+--- compile + run cpp file
+-- nmap("<LEADER>c", "<CMD>terminal<CR>ig++ <CMD>echo %:t<CR>")
+nmap("<LEADER>c", "<CMD>w<CR><CMD>terminal g++ % && ./a.out<CR><CMD>startinsert<CR>")
