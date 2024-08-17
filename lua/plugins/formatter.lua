@@ -12,7 +12,7 @@ return {
 					html = { "prettier" },
 					json = { "prettier" },
 					-- only run if first fails
-					markdown = { { "prettier" } },
+					markdown = { "prettier" },
 					yaml = { "yamlfix" },
 					python = { "isort", "black" },
 				},

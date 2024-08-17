@@ -30,10 +30,10 @@ return {
 					name = "archives",
 					path = "~/Documents/archives/",
 				},
-				{
-					name = "info",
-					path = "~/Documents/info/",
-				},
+				-- {
+				-- 	name = "info",
+				-- 	path = "~/Documents/info/",
+				-- },
 			},
 			-- notes_subdir = "notes",
 			-- new_notes_location = "notes_subdir",

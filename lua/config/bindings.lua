@@ -25,7 +25,7 @@ imap("jk", "<ESC><CMD>w<CR>")
 imap("jjk", "<ESC>")
 
 --- copy all
-nmap("<LEADER>a", 'ggvG"+y')
+nmap("<LEADER>a", 'ggVG"+y')
 
 --- undo with U
 nmap("U", "<C-r>")
@@ -41,6 +41,7 @@ nmap("c", '"_c')
 nmap("Y", "v$y")
 nmap("<LEADER>Y", 'v$"+y')
 nmap("<LEADER>y", '"+y')
+vmap("<LEADER>y", '"+y')
 nmap("<LEADER>yy", '"+yy')
 nmap("<LEADER>p", '"+p')
 nmap("<LEADER>x", '"+d')
@@ -67,12 +68,18 @@ nmap("<LEADER>fg", "<CMD>Telescope git_files<CR>")
 nmap("<LEADER>fo", "<CMD>ObsidianSearch<CR>")
 
 --- obsidian
-nmap("<LEADER>n", "<CMD>e ~/Documents/archives/1715179261-navigation.md<CR>")
+nmap("<LEADER>n", "<CMD>e /home/yang/Documents/archives/1721625004-hub.md<CR>")
 nmap("<LEADER>on", "<CMD>ObsidianToday<CR>")
 nmap("<LEADER>ot", "<CMD>ObsidianToday 1<CR>")
 nmap("<LEADER>oy", "<CMD>ObsidianToday -1<CR>")
 nmap("<LEADER>ob", "<CMD>ObsidianBacklinks<CR>")
+nmap("<LEADER>ot", "<CMD>ObsidianTags<CR>")
 
 --- compile + run cpp file
 -- nmap("<LEADER>c", "<CMD>terminal<CR>ig++ <CMD>echo %:t<CR>")
-nmap("<LEADER>c", "<CMD>w<CR><CMD>terminal g++ % && ./a.out<CR><CMD>startinsert<CR>")
+nmap("<LEADER>C", "<CMD>terminal g++ % -Wall && time ./a.out<CR><CMD>startinsert<CR>")
+nmap("<LEADER>c", "<CMD>terminal make && time ./app<CR><CMD>startinsert<CR>")
+nmap("<LEADER>t", "<CMD>terminal<CR><CMD>startinsert<CR>")
+
+nmap("<TAB>", "/\\[*\\]<CR>")
+nmap("<S-TAB>", "/\\[*\\]<CR>NN")
