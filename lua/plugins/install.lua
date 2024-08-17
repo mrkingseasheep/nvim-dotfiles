@@ -15,6 +15,8 @@ return {
 				"isort",
 				"black",
 				"prettier",
+				"typescript-language-server",
+				"eslint-lsp",
 			},
 			auto_update = true,
 			run_on_start = true,

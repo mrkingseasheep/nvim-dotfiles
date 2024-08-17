@@ -11,6 +11,8 @@ return {
 					css = { "prettier" },
 					html = { "prettier" },
 					json = { "prettier" },
+					javascript = { "prettier" },
+					typescript = { "prettier" },
 					-- only run if first fails
 					markdown = { "prettier" },
 					yaml = { "yamlfix" },
