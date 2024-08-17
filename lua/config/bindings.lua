@@ -68,7 +68,7 @@ nmap("<LEADER>fg", "<CMD>Telescope git_files<CR>")
 nmap("<LEADER>fo", "<CMD>ObsidianSearch<CR>")
 
 --- obsidian
-nmap("<LEADER>n", "<CMD>e /home/yang/Documents/archives/1721625004-hub.md<CR>")
+nmap("<LEADER>n", "<CMD>e /home/yang/002-Resources/notes/1721625004-hub.md<CR>")
 nmap("<LEADER>on", "<CMD>ObsidianToday<CR>")
 nmap("<LEADER>ot", "<CMD>ObsidianToday 1<CR>")
 nmap("<LEADER>oy", "<CMD>ObsidianToday -1<CR>")
@@ -83,3 +83,5 @@ nmap("<LEADER>t", "<CMD>terminal<CR><CMD>startinsert<CR>")
 
 nmap("<TAB>", "/\\[*\\]<CR>")
 nmap("<S-TAB>", "/\\[*\\]<CR>NN")
+nmap("<LEADER>uu", "/<+++><CR>cf>")
+imap(",mm", "<+++>")
