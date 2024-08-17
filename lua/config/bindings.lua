@@ -81,7 +81,11 @@ nmap("<LEADER>C", "<CMD>terminal g++ % -Wall && time ./a.out<CR><CMD>startinsert
 nmap("<LEADER>c", "<CMD>terminal make && time ./app<CR><CMD>startinsert<CR>")
 nmap("<LEADER>t", "<CMD>terminal<CR><CMD>startinsert<CR>")
 
+-- quick jumps
 nmap("<TAB>", "/\\[*\\]<CR>")
 nmap("<S-TAB>", "/\\[*\\]<CR>NN")
-nmap("<LEADER>uu", "/<+++><CR>cf>")
-imap(",mm", "<+++>")
+imap(",uu", "<++>")
+nmap("<LEADER>up", "/<++><CR>Ncf>")
+nmap("<LEADER>un", "/<++><CR>cf>")
+imap(",un", "<ESC>/<++><CR>cf>")
+imap(",up", "<ESC>/<++><CR>Ncf>")
