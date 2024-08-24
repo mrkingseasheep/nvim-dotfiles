@@ -14,6 +14,7 @@ return {
 			lsp.clangd.setup({})
 			lsp.basedpyright.setup({})
 			lsp.tsserver.setup({})
+			-- lsp.eslint.setup({})
 			lsp.lua_ls.setup({})
 		end,
 	},

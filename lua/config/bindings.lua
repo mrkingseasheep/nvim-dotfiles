@@ -89,3 +89,5 @@ nmap("<LEADER>up", "/<++><CR>Ncf>")
 nmap("<LEADER>un", "/<++><CR>cf>")
 imap(",un", "<ESC>/<++><CR>cf>")
 imap(",up", "<ESC>/<++><CR>Ncf>")
+
+nmap("<LEADER>js", "<CMD>terminal tsc && node .<CR><CMD>startinsert<CR>")
