@@ -1,8 +1,7 @@
 return {
-	"https://github.com/SirVer/ultisnips",
-	init = function()
-		vim.UltiSnipsExpandTrigger = "<tab>"
-		vim.UltiSnipsJumpForwardTrigger = "<c-b>"
-		vim.UltiSnipsJumpBackwardTrigger = "<c-z>"
-	end,
+	"L3MON4D3/LuaSnip",
+	-- follow latest release.
+	version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+	-- install jsregexp (optional!).
+	build = "make install_jsregexp",
 }

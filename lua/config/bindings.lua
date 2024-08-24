@@ -48,6 +48,7 @@ nmap("<LEADER>x", '"+d')
 
 --- better use of $ and ^
 nmap("_", "$")
+vmap("_", "$")
 
 --- jumps feel better
 nmap("<C-u>", "<C-u>zz")
@@ -82,8 +83,9 @@ nmap("<LEADER>c", "<CMD>terminal make && time ./app<CR><CMD>startinsert<CR>")
 nmap("<LEADER>t", "<CMD>terminal<CR><CMD>startinsert<CR>")
 
 -- quick jumps
-nmap("<TAB>", "/\\[*\\]<CR>")
-nmap("<S-TAB>", "/\\[*\\]<CR>NN")
+nmap("<TAB>", "/\\[\\S\\+\\]<CR>") -- why is \+ but not *
+-- 😔 https://vimregex.com/
+nmap("<S-TAB>", "/\\[\\S\\+\\]<CR>NN")
 imap(",uu", "<++>")
 nmap("<LEADER>up", "/<++><CR>Ncf>")
 nmap("<LEADER>un", "/<++><CR>cf>")
